@@ -135,9 +135,9 @@ let HomeMaterial = ({
                                 :
                                 (material.name === '삼겹살' || material.name === "한우" || material.name === "호주산"
                                     ?
-                                    (<p className="card-text">{(material.price / 100) * enteredWeight}</p>)
+                                    (<p className="card-text">{(material.price / 100) * enteredWeight} 원</p>)
                                     :
-                                    (<p className="card-text">{material.price * enteredWeight}</p>)
+                                    (<p className="card-text">{material.price * enteredWeight} 원</p>)
                                 )
                             }
                         </strong>
