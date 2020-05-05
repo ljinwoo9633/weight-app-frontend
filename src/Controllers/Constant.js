@@ -1,1 +1,1 @@
-export let BACKEND_URL = 'http://localhost:5000';
+export let BACKEND_URL = 'https://weight-app-backend.herokuapp.com';
