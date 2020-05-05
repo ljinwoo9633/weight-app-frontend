@@ -78,7 +78,6 @@ class Home extends React.Component
             enteredWeight,
             exchangeRate
         } = this.state;
-        console.log(enteredWeight);
         return(
             isLoading
             ?

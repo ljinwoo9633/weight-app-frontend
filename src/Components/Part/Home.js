@@ -133,7 +133,12 @@ let HomeMaterial = ({
                                 ?
                                 (<p className="card-text text-success">값을 입력해주세요~</p>)
                                 :
-                                (<p className="card-text">{material.price * parseFloat(enteredWeight)}원</p>)
+                                (material.name === '삼겹살' || material.name === "한우" || material.name === "호주산"
+                                    ?
+                                    (<p className="card-text">{(material.price / 100) * enteredWeight}</p>)
+                                    :
+                                    (<p className="card-text">{material.price * enteredWeight}</p>)
+                                )
                             }
                         </strong>
                     </div>
